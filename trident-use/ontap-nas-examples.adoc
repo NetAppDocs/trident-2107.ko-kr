@@ -229,7 +229,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 
 
 
-=== ONTAP - 인증서 기반 인증을 갖춘 NAS 드라이버
+=== `ontap-nas` 인증서 기반 인증을 사용하는 드라이버
 
 이는 최소 백엔드 구성의 예입니다. `clientCertificate`, `clientPrivateKey`, 및 `trustedCACertificate` (신뢰할 수 있는 CA를 사용하는 경우 선택 사항)는 에 채워집니다 `backend.json` 그리고 각각 클라이언트 인증서, 개인 키 및 신뢰할 수 있는 CA 인증서의 base64로 인코딩된 값을 사용합니다.
 
@@ -250,7 +250,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 ----
 
 
-=== 자동 엑스포트 정책이 포함된 ONTAP-NAS 드라이버
+=== `ontap-nas` 자동 내보내기 정책이 있는 드라이버
 
 이 예에서는 Astra Trident가 동적 엑스포트 정책을 사용하여 엑스포트 정책을 자동으로 생성하고 관리하도록 지시하는 방법을 보여 줍니다. 이 기능은 에 대해서도 동일하게 작동합니다 `ontap-nas-economy` 및 `ontap-nas-flexgroup` 드라이버.
 
@@ -272,13 +272,13 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 ----
 
 
-=== ONTAP-NAS-flexgroup 드라이버
+=== `ontap-nas-flexgroup` 드라이버
 
 {"version":1,"storageDriverName":"ONTAP-NAS-flexgroup", "managementLIF":"10.0.0.1", "dataLIF":"10.0.0.2", "레이블":{"k8scluster":"test-cluster-east-1b", "backend":"test1-ONTAP-cluster"}, "svm":"svm_nfs", "username":"vsadmin", "password":"secret",}
 
 
 
-=== ONTAP - IPv6를 사용하는 NAS 드라이버
+=== `ontap-nas` IPv6를 사용하는 드라이버
 
 [listing]
 ----
@@ -295,7 +295,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 ----
 
 
-=== ONTAP - NAS - 경제적인 드라이버
+=== `ontap-nas-economy` 드라이버
 
 [listing]
 ----
@@ -319,7 +319,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 
 
 
-=== ONTAP - NAS 드라이버
+=== `ontap-nas` 드라이버
 
 [listing]
 ----
@@ -384,7 +384,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 ----
 
 
-=== ONTAP-NAS-flexgroup 드라이버
+=== `ontap-nas-flexgroup` 드라이버
 
 [listing]
 ----
@@ -445,7 +445,7 @@ NOTE: Trident가 있는 NetApp ONTAP에서 Amazon FSx를 사용하는 경우 IP 
 ----
 
 
-=== ONTAP - NAS - 경제적인 드라이버
+=== `ontap-nas-economy` 드라이버
 
 [listing]
 ----
